@@ -20,7 +20,6 @@ import Image from "next/image";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 import Link from "next/link";
-import Search from "../Search";
 import { SetStateAction, useState } from "react";
 
 export function Header() {
