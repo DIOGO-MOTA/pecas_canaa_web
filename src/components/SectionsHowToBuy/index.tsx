@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function SectionsHowToBuy( ) {
   const { ref } = useParallax<HTMLImageElement>({
-    translateY: [40, -30],
+    translateY: [20, -20],
     opacity: [0.2, 5, 'easeInOut']
   }); 
 
