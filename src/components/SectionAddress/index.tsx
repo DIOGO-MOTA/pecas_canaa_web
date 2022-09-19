@@ -19,7 +19,7 @@ export function SectionAddress() {
           mb={{ base: 12, md: 12, lg: 0 }}
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.8385546363758!2d-49.489346717623356!3d-16.666525469059867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e5d75fb9ca853%3A0x9999a039556bcc20!2sR.%20Ladomi%20de%20Lima%20-%20St.%20Cristina%20II%2C%20Trindade%20-%20GO%2C%2075389-134!5e0!3m2!1spt-BR!2sbr!4v1654688615357!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8080499479006!2d-49.3112820854991!3d-16.686486149971564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef420aa63fbfb%3A0xb0e804f9b2f78c98!2sAvenida%20Neddermeyer%2C%201190%20-%20Cidade%20Jardim%2C%20Goi%C3%A2nia%20-%20GO!5e0!3m2!1spt-BR!2sbr!4v1663186497564!5m2!1spt-BR!2sbr"
             width="600"
             height="350"
           ></iframe>
@@ -37,8 +37,9 @@ export function SectionAddress() {
             <Flex maxW='424px' >
               <Icon as={MdLocationPin} boxSize={12} mr={2} />
               <Text  as="strong"  fontWeight="bold" fontSize={"xl"} mb={4}>
-                AVENIDA NEDDERMEYER, 1190 - VILA CANAÃ, GOIÁS CEP:
-                74423-210
+                AVENIDA NEDDERMEYER, 1190  <br />
+                VILA CANAÃ, GOIÂNIA - GOIÁS <br />
+                CEP: 74423-210
               </Text>
             </Flex>
         </Flex>
