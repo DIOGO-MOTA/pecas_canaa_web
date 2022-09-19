@@ -107,7 +107,7 @@ export function Footer() {
           justify={"center"}
           textAlign={{ base: "center", md: "center" }}
         >
-          <Text>Todos direitos Reservados - Peças Canaâ - 2022 </Text>
+          <Text>Todos direitos Reservados - Peças Canaã - 2022 </Text>
         </Container>
       </Box>
 
