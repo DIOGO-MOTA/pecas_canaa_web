@@ -2,17 +2,30 @@ import {
   Box,
   Container,
   Flex,
-  Image,
   Stack,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 
 import Link from "next/link";
+import Image from "next/future/image";
 
 export function Footer() {
   return (
-    <Box w="100%" as="footer" bg="gray.800" color="gray.50" mt='20' >
+    <Box w="100%" as="footer" bg="gray.800" color="gray.50">
+      <Flex
+        alignItems="center"
+        justifyContent="center"
+        direction="column"
+        as="section"
+        w="100%"
+        mx="auto"
+        px="2"
+        bg="red.100"
+      >
+        <Image src="/frete.png" width={1200} height={450} alt="" />
+      </Flex>
+
       <Container
         as={Stack}
         maxW={"6xl"}
@@ -113,7 +126,7 @@ export function Footer() {
           </Text>
           <Box>
             {" "}
-            <Image src={"/EasyAPP.png"} />
+            <Image src={"/EasyAPP.png"} width={59} height={14} alt="" />
           </Box>
         </Flex>
       </Box>

@@ -22,6 +22,7 @@ import { Cards } from "../components/Cards";
 import { SectionsCards } from "../components/SectionsCards";
 import { SectionsCardBrands } from "../components/SectionsCardBrands";
 import { SectionsHowToBuy } from "../components/SectionsHowToBuy";
+import { SectionAddress } from "../components/SectionAddress";
 
 
 
@@ -148,13 +149,11 @@ export default function Home() {
           width="100%"
           bg="yellow.500"
         />
+
+        <SectionAddress />
         
       </Flex>
 
-     
-       
-
-      <Footer />
     </Box>
   );
 }

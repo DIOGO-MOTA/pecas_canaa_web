@@ -2,11 +2,12 @@ import * as React from "react";
 
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-
-import { Box, Flex } from "@chakra-ui/react";
 import Image from "next/future/image";
 
-const animation = { duration: 9000, easing: (t: number) => t };
+import { Box, Flex } from "@chakra-ui/react";
+
+
+const animation = { duration: 15000, easing: (t: number) => t };
 
 export function SectionsCardBrands() {
   const [sliderRef] = useKeenSlider<HTMLDivElement>({

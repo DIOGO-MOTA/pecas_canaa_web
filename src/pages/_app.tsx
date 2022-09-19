@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
 
           <ToastContainer autoClose={2000} />
+          <Footer/>
         </ParallaxProvider>
       </ChakraProvider>
     </>
