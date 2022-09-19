@@ -22,8 +22,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           phoneNumber="5562993834795"
           accountName="Peças Canaã"
           statusMessage='Online'
-          avatar="/logo.png"
-          chatMessage="fale com Nocosco"
+          avatar="/logowhats.png"
+          chatMessage="Como posso ajudar ?"
           placeholder='Mensagem'
           allowClickAway 
           notificationSound
