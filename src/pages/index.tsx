@@ -21,35 +21,32 @@ import { Cards } from "../components/Cards";
 import { SectionsCards } from "../components/SectionsCards";
 
 export default function Home() {
-
- 
-
   const products = [
     {
-      id: '2312',
-      description: '2022 FIAT PULSE IMPETUS 1.0 TURBO CVT',
-      imageUrl: '/carro.jpeg',
-      color: 'BRANCA',
-      marca: 'FIAT',
-      fuel: 'FLEX',  
+      id: "2312",
+      description: "2022 FIAT PULSE IMPETUS 1.0 TURBO CVT",
+      imageUrl: "/carro.jpeg",
+      color: "BRANCA",
+      marca: "FIAT",
+      fuel: "FLEX",
     },
     {
-      id: '231',
-      description: '2022 FIAT PULSE IMPETUS 1.0 TURBO CVT',
-      imageUrl: '/carro.jpeg',
-      color: 'BRANCA',
-      marca: 'FIAT',
-      fuel: 'FLEX',  
+      id: "231",
+      description: "2022 FIAT PULSE IMPETUS 1.0 TURBO CVT",
+      imageUrl: "/carro.jpeg",
+      color: "BRANCA",
+      marca: "FIAT",
+      fuel: "FLEX",
     },
     {
-      id: '212',
-      description: '2022 FIAT PULSE IMPETUS 1.0 TURBO CVT',
-      imageUrl: '/carro.jpeg',
-      color: 'BRANCA',
-      marca: 'FIAT',
-      fuel: 'FLEX',  
-    }
-  ]
+      id: "212",
+      description: "2022 FIAT PULSE IMPETUS 1.0 TURBO CVT",
+      imageUrl: "/carro.jpeg",
+      color: "BRANCA",
+      marca: "FIAT",
+      fuel: "FLEX",
+    },
+  ];
   return (
     <Box as="main">
       <Box display="flex" alignContent="center" justifyContent="center">
@@ -59,7 +56,7 @@ export default function Home() {
       <Flex
         alignItems="center"
         justifyContent="center"
-        direction='column'
+        direction="column"
         as="section"
         w="100%"
         maxWidth={1200}
@@ -115,10 +112,51 @@ export default function Home() {
           </WrapItem>
         </Flex>
 
-        <SectionsCards title="Sucatas" data={products} text='TODOS OS CARROS' href="/" />
+        <SectionsCards
+          title="Sucatas"
+          data={products}
+          text="TODOS OS CARROS"
+          href="/"
+        />
 
-        <SectionsCards title="Peças" data={products} text='TODAS AS PEÇAS' href="/" />
-       
+        <SectionsCards
+          title="Peças"
+          data={products}
+          text="TODAS AS PEÇAS"
+          href="/"
+        />
+
+        <Box
+          display="flex"
+          width="100%"
+          flexDir={"column"}
+          justifyContent="center"
+          alignItems={"center"}
+          borderRadius={4}
+          bg="yellow.500"
+          p={2}
+          textAlign={{ base: "center", md: "left" }}
+        >
+          <Text fontSize="3xl" fontWeight="semibold" color="gray.20">
+            COMO COMPAR
+          </Text>
+        </Box>
+
+        <Flex flexDir={{base: 'column' , md: 'row'}} >
+          <Box p='4'>
+          <Image src={"/imgcompar.png"} width="640px" height="479px" />
+          </Box>
+
+          <Text as="p" fontSize="24px" maxW='737px' fontWeight='semibold' color="gray.800" textAlign="justify" p='4'>
+            Nosso atendimento e suporte é online feito via whatsapp. Nos envie
+            uma mensagem com a lista de itens que deseja, que um de nossos
+            vendedores irá entrar em contato o quanto antes. Após confirmação do
+            pagamento, feito por PIX, iremos retirar as peças em nossos
+            fornecedores e encaminhamos para nossos clientes. Os pedidos são
+            enviados via transportadora ou Correios de segunda-feira a sábado,
+            exceto feriados nacionais.
+          </Text>
+        </Flex>
       </Flex>
 
       <Footer />
