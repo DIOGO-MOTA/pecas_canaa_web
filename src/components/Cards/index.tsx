@@ -1,6 +1,5 @@
 import { Box, Center, Heading, Text, Flex, Icon } from "@chakra-ui/react";
 
-import formatValue from "../../utils/formatValue";
 import Link from "next/link";
 import Image from "next/image";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -64,7 +63,7 @@ export function Cards({ products }: HomeProps) {
             <Link 
             passHref
             href={
-              "https://api.whatsapp.com/send?phone=5562994382290&text=Estamos%20entrando%20em%20contato%20a%20partir%20do%20site!"
+              "https://api.whatsapp.com/send?phone=5562993834795&text=Estamos%20entrando%20em%20contato%20a%20partir%20do%20site!"
             }>
              
               <Text
