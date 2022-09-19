@@ -38,6 +38,17 @@ export function Header() {
 
   const sizes = ["xs"];
 
+  
+  function handleBuy() {
+    window.scroll({
+      top: 2300,
+      behavior: "smooth",
+    })
+
+  }
+
+
+
   return (
     <Flex
       as="header"
@@ -71,7 +82,7 @@ export function Header() {
                 <Box>
                   <Link passHref href="/">
                     <Text
-                      as="a"
+                      as="button"
                       cursor={"pointer"}
                       color="gray.50"
                       _hover={{ color: "yellow.500" }}
@@ -113,18 +124,19 @@ export function Header() {
                 </Box>
 
                 <Box>
-                  <Link passHref href="/">
+                  
                     <Text
-                      as="a"
+                      as="button"
                       cursor={"pointer"}
                       color="gray.50"
                       _hover={{ color: "yellow.500" }}
                       fontWeight="bold"
                       fontSize={"xl"}
+                      onClick={handleBuy}
                     >
                       COMO COMPAR
                     </Text>
-                  </Link>
+                  
                 </Box>
               </Menu>
             </Flex>

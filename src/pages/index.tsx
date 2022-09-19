@@ -3,6 +3,7 @@ import type { GetServerSideProps } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { motion } from 'framer-motion'
 
 import {
   Flex,
@@ -19,6 +20,12 @@ import {
 import { Footer } from "../components/Footer";
 import { Cards } from "../components/Cards";
 import { SectionsCards } from "../components/SectionsCards";
+import { SectionsCardBrands } from "../components/SectionsCardBrands";
+import { SectionsHowToBuy } from "../components/SectionsHowToBuy";
+
+
+
+
 
 export default function Home() {
   const products = [
@@ -47,6 +54,7 @@ export default function Home() {
       fuel: "FLEX",
     },
   ];
+
   return (
     <Box as="main">
       <Box display="flex" alignContent="center" justifyContent="center">
@@ -126,38 +134,25 @@ export default function Home() {
           href="/"
         />
 
+        <SectionsHowToBuy />
+
         <Box
-          display="flex"
+          h='8px'
           width="100%"
-          flexDir={"column"}
-          justifyContent="center"
-          alignItems={"center"}
-          borderRadius={4}
           bg="yellow.500"
-          p={2}
-          textAlign={{ base: "center", md: "left" }}
-        >
-          <Text fontSize="3xl" fontWeight="semibold" color="gray.20">
-            COMO COMPAR
-          </Text>
-        </Box>
-
-        <Flex flexDir={{base: 'column' , md: 'row'}} >
-          <Box p='4'>
-          <Image src={"/imgcompar.png"} width="640px" height="479px" />
-          </Box>
-
-          <Text as="p" fontSize="24px" maxW='737px' fontWeight='semibold' color="gray.800" textAlign="justify" p='4'>
-            Nosso atendimento e suporte é online feito via whatsapp. Nos envie
-            uma mensagem com a lista de itens que deseja, que um de nossos
-            vendedores irá entrar em contato o quanto antes. Após confirmação do
-            pagamento, feito por PIX, iremos retirar as peças em nossos
-            fornecedores e encaminhamos para nossos clientes. Os pedidos são
-            enviados via transportadora ou Correios de segunda-feira a sábado,
-            exceto feriados nacionais.
-          </Text>
-        </Flex>
+        />
+         
+         <SectionsCardBrands />
+        <Box
+          h='8px'
+          width="100%"
+          bg="yellow.500"
+        />
+        
       </Flex>
+
+     
+       
 
       <Footer />
     </Box>
